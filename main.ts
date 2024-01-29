@@ -1,42 +1,9 @@
-input.onButtonPressed(Button.A, function () {
-    for (let index = 0; index < 2; index++) {
-        basic.showLeds(`
-            # # # # #
-            . . . . .
-            # # # # #
-            . . . . .
-            # # # # #
-            `)
-        basic.clearScreen()
-        basic.pause(500)
+let getal = 0
+basic.forever(function () {
+    if (getal < 36912) {
+        basic.showNumber(getal)
+    } else {
+        getal += 3
+        basic.pause(1000)
     }
-    for (let index = 0; index < 2; index++) {
-        basic.showLeds(`
-            . . . . .
-            # # # # #
-            . . . . .
-            # # # # #
-            . . . . .
-            `)
-        basic.pause(500)
-    }
-})
-input.onButtonPressed(Button.B, function () {
-    for (let index = 0; index < 2; index++) {
-        basic.showLeds(`
-            . . # . #
-            # . # . #
-            # . # . #
-            # . # . #
-            # . # . #
-            `)
-    }
-    basic.showLeds(`
-        . # . # .
-        . # . # .
-        . # . # .
-        . # . # .
-        . # . # .
-        `)
-    basic.pause(100)
 })
