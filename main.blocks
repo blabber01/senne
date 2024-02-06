@@ -1,1 +1,25 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="23siAHafWiuqZU#rhz(O">getal</variable><variable id="HlE:8}_#9iRm|q_+UQL{">knop ingedrukt is</variable></variables><block type="device_gesture_event" id=":Ue}=RZO_u6a-5qW3YJ0" x="406" y="61"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="device_show_number" id="SWi9[f^p;ICR`6!osp0H"><value name="number"><shadow type="math_number" id="TP1*,($X*zirChfmFe~l"><field name="NUM">0</field></shadow><block type="device_random" id="4E3^bzZ9#6K]P|Mw*4Z["><value name="min"><shadow type="math_number" id=",[3nKtHXms):KH6NA|V@"><field name="NUM">1</field></shadow></value><value name="limit"><shadow type="math_number" id="OK@4-],UQg4).aZv6qf#"><field name="NUM">6</field></shadow></value></block></value><next><block type="device_pause" id="HhnZcoYFwG;K7$Z{fW?}"><value name="pause"><shadow type="timePicker" id="AeqZzhmpfP6/g1*t+G=+"><field name="ms">2000</field></shadow></value><next><block type="device_clear_display" id="9GefU8@tyWTgNT!jc~#)"></block></next></block></next></block></statement></block><block type="pxt-on-start" id="Fb$0|^y2k..3-M7$M%L@" x="119" y="121"></block><block type="set_traffic_light_state" id="J7IDg%]|b59vH#i!,d1x" disabled="true" x="45" y="1060"><field name="lightState">Kitronik_STOPbit.LightStates.GetReady</field></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="23siAHafWiuqZU#rhz(O">getal</variable><variable id="HlE:8}_#9iRm|q_+UQL{">knop ingedrukt is</variable><variable id="RaPQg1-aX)%duoxBU0Xy">kompas</variable></variables><block type="pxt-on-start" id="Fb$0|^y2k..3-M7$M%L@" x="-47" y="-269"><statement name="HANDLER"><block type="variables_set" id="jId#GRy?26)Ma71+02{/"><field name="VAR" id="RaPQg1-aX)%duoxBU0Xy">kompas</field><value name="VALUE"><shadow type="math_number" id=",?0qAXbY6Sa^STyTf?D*"><field name="NUM">0</field></shadow><block type="device_heading" id="I~hU2;(H?!J*(8U[@(;a"></block></value></block></statement></block><block type="device_gesture_event" id="#jo[xcl{X-^glDEwX2wZ" x="499" y="-174"><field name="NAME">Gesture.LogoDown</field></block><block type="device_gesture_event" id="I~Ok]fDQp7e_@.?^,F(@" x="249" y="-156"><field name="NAME">Gesture.LogoUp</field></block><block type="device_forever" id="wxbBh373@Z16-bNbE.@o" x="-37" y="-107"><statement name="HANDLER"><block type="controls_if" id=")5`w5SmY${`Q[(`LE%h@"><value name="IF0"><shadow type="logic_boolean" id="kMTj_D|6X3g^2pn7Z}i?"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="H6lA{wbe~qQ[MJbMbpVG"><field name="OP">GT</field><value name="A"><shadow type="math_number" id="%@aKDbtflkh~0(1K.C`6"><field name="NUM">0</field></shadow><block type="variables_get" id="V9Ep2ds:n*?ucp0[Eaxs"><field name="VAR" id="RaPQg1-aX)%duoxBU0Xy">kompas</field></block></value><value name="B"><shadow type="math_number" id="#r#aUSlXqAiwApt|Tz.Y"><field name="NUM">315</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="__a/p%g6=m(a95@ylab]"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # . # . # 
+        . . # . . 
+        . . # . .
+        `</field></block></statement></block></statement></block><block type="device_gesture_event" id="kYVV=+O|9K/NedRxRVi!" x="791" y="-49"><field name="NAME">Gesture.Shake</field></block><block type="device_heading" id="a9F6%@WrZG])}}ZN4Ub/" disabled="true" x="384" y="2"></block><block type="device_show_leds" id="6oz=L^/tOXK574J0JwcY" disabled="true" x="487" y="47"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        # . # . # 
+        . # # # . 
+        . . # . .
+        `</field><next><block type="device_show_leds" id="d4U12]KlkWXctsdvod.w" disabled="true"><field name="LEDS">`
+        . . # . . 
+        . . . # . 
+        # # # # # 
+        . . . # . 
+        . . # . .
+        `</field><next><block type="device_show_leds" id="TbV]6xq@)O6X-~#p+`3e" disabled="true"><field name="LEDS">`
+        . . # . . 
+        . # . . . 
+        # # # # # 
+        . # . . . 
+        . . # . .
+        `</field></block></next></block></next></block><block type="basic_show_arrow" id="pNm3mz]!V{O0/Z[G3Ufq" disabled="true" x="-50" y="200"><value name="i"><shadow type="device_arrow" id="yscV4hxky5)ImoXX}M_4" disabled="true"><field name="arrow">ArrowNames.North</field></shadow></value></block><block type="device_heading" id="mY*Z2RnVIBUd3jB8QqTe" disabled="true" x="222" y="192"></block><block type="logic_compare" id="PiX$nZu:YojI;Qj,b:h]" disabled="true" x="165" y="324"><field name="OP">GT</field><value name="A"><shadow type="math_number" id="efRtw#oa@,xTAU)M99S~" disabled="true"><field name="NUM">315</field></shadow></value><value name="B"><shadow type="math_number" id="i+l#dj~.U-=+y/7pS}q=" disabled="true"><field name="NUM">45</field></shadow></value></block><block type="set_traffic_light_state" id="J7IDg%]|b59vH#i!,d1x" disabled="true" x="-74" y="939"><field name="lightState">Kitronik_STOPbit.LightStates.GetReady</field></block></xml>

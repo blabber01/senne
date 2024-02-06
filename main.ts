@@ -1,5 +1,21 @@
+input.onGesture(Gesture.LogoDown, function () {
+	
+})
 input.onGesture(Gesture.Shake, function () {
-    basic.showNumber(randint(1, 6))
-    basic.pause(2000)
-    basic.clearScreen()
+	
+})
+input.onGesture(Gesture.LogoUp, function () {
+	
+})
+let kompas = input.compassHeading()
+basic.forever(function () {
+    if (kompas > 315) {
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            # . # . #
+            . . # . .
+            . . # . .
+            `)
+    }
 })
