@@ -1,25 +1,19 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="23siAHafWiuqZU#rhz(O">getal</variable><variable id="HlE:8}_#9iRm|q_+UQL{">knop ingedrukt is</variable><variable id="RaPQg1-aX)%duoxBU0Xy">kompas</variable></variables><block type="pxt-on-start" id="Fb$0|^y2k..3-M7$M%L@" x="-47" y="-269"><statement name="HANDLER"><block type="variables_set" id="jId#GRy?26)Ma71+02{/"><field name="VAR" id="RaPQg1-aX)%duoxBU0Xy">kompas</field><value name="VALUE"><shadow type="math_number" id=",?0qAXbY6Sa^STyTf?D*"><field name="NUM">0</field></shadow><block type="device_heading" id="I~hU2;(H?!J*(8U[@(;a"></block></value></block></statement></block><block type="device_gesture_event" id="#jo[xcl{X-^glDEwX2wZ" x="499" y="-174"><field name="NAME">Gesture.LogoDown</field></block><block type="device_gesture_event" id="I~Ok]fDQp7e_@.?^,F(@" x="249" y="-156"><field name="NAME">Gesture.LogoUp</field></block><block type="device_forever" id="wxbBh373@Z16-bNbE.@o" x="-37" y="-107"><statement name="HANDLER"><block type="controls_if" id=")5`w5SmY${`Q[(`LE%h@"><value name="IF0"><shadow type="logic_boolean" id="kMTj_D|6X3g^2pn7Z}i?"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="H6lA{wbe~qQ[MJbMbpVG"><field name="OP">GT</field><value name="A"><shadow type="math_number" id="%@aKDbtflkh~0(1K.C`6"><field name="NUM">0</field></shadow><block type="variables_get" id="V9Ep2ds:n*?ucp0[Eaxs"><field name="VAR" id="RaPQg1-aX)%duoxBU0Xy">kompas</field></block></value><value name="B"><shadow type="math_number" id="#r#aUSlXqAiwApt|Tz.Y"><field name="NUM">315</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="__a/p%g6=m(a95@ylab]"><field name="LEDS">`
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="23siAHafWiuqZU#rhz(O">getal</variable><variable id="HlE:8}_#9iRm|q_+UQL{">knop ingedrukt is</variable><variable id="RaPQg1-aX)%duoxBU0Xy">kompas</variable></variables><block type="device_forever" id=".*R/X2M-?}d3?@P*@JLP" x="71" y="-412"></block><block type="pxt-on-start" id="Fb$0|^y2k..3-M7$M%L@" x="-182" y="-186"></block><block type="device_forever" id="$:QA5aSYQE-.DA0p_g}N" x="-754" y="-32"></block><block type="device_forever" id="wxbBh373@Z16-bNbE.@o" x="31" y="56"><statement name="HANDLER"><block type="controls_if" id="M,e5d(h%3SJw7W0*i9nx"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="?T{kE);*smi[GF9Kyqx("><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id=",P5J)[Rbibd04B?ED2,_"><field name="OP">OR</field><value name="A"><block type="kitronik_controller_ispressed" id="7~N.r*rNh%j!uYa/pxA,"><field name="button">Kitronik_Game_Controller.ControllerButtonPins.Left</field></block></value><value name="B"><block type="kitronik_controller_ispressed" id="uLJoWWkrM{p5X|Rm^F29"><field name="button">Kitronik_Game_Controller.ControllerButtonPins.Right</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="mPX7G#{]Y0xx76Kxi1|8"><field name="LEDS">`
         . . # . . 
-        . # # # . 
-        # . # . # 
-        . . # . . 
-        . . # . .
-        `</field></block></statement></block></statement></block><block type="device_gesture_event" id="kYVV=+O|9K/NedRxRVi!" x="791" y="-49"><field name="NAME">Gesture.Shake</field></block><block type="device_heading" id="a9F6%@WrZG])}}ZN4Ub/" disabled="true" x="384" y="2"></block><block type="device_show_leds" id="6oz=L^/tOXK574J0JwcY" disabled="true" x="487" y="47"><field name="LEDS">`
+        . # # . . 
         . . # . . 
         . . # . . 
-        # . # . # 
-        . # # # . 
-        . . # . .
-        `</field><next><block type="device_show_leds" id="d4U12]KlkWXctsdvod.w" disabled="true"><field name="LEDS">`
-        . . # . . 
-        . . . # . 
-        # # # # # 
-        . . . # . 
-        . . # . .
-        `</field><next><block type="device_show_leds" id="TbV]6xq@)O6X-~#p+`3e" disabled="true"><field name="LEDS">`
-        . . # . . 
-        . # . . . 
-        # # # # # 
-        . # . . . 
-        . . # . .
-        `</field></block></next></block></next></block><block type="basic_show_arrow" id="pNm3mz]!V{O0/Z[G3Ufq" disabled="true" x="-50" y="200"><value name="i"><shadow type="device_arrow" id="yscV4hxky5)ImoXX}M_4" disabled="true"><field name="arrow">ArrowNames.North</field></shadow></value></block><block type="device_heading" id="mY*Z2RnVIBUd3jB8QqTe" disabled="true" x="222" y="192"></block><block type="logic_compare" id="PiX$nZu:YojI;Qj,b:h]" disabled="true" x="165" y="324"><field name="OP">GT</field><value name="A"><shadow type="math_number" id="efRtw#oa@,xTAU)M99S~" disabled="true"><field name="NUM">315</field></shadow></value><value name="B"><shadow type="math_number" id="i+l#dj~.U-=+y/7pS}q=" disabled="true"><field name="NUM">45</field></shadow></value></block><block type="set_traffic_light_state" id="J7IDg%]|b59vH#i!,d1x" disabled="true" x="-74" y="939"><field name="lightState">Kitronik_STOPbit.LightStates.GetReady</field></block></xml>
+        . # # # .
+        `</field></block></statement><statement name="ELSE"><block type="controls_if" id=",[kXo^4AHYV@k,U.:73e"><value name="IF0"><shadow type="logic_boolean" id="3!D7v#z$AFZ{P)K=l/oX"><field name="BOOL">TRUE</field></shadow><block type="logic_negate" id="-=fO/`ERNcV!E-7Av;)C"><value name="BOOL"><block type="kitronik_controller_ispressed" id="PDjey!E~.@j=7$1pgI4)"><field name="button">Kitronik_Game_Controller.ControllerButtonPins.Right</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="-5%LsNM}Us(ASjLOn6f`"><field name="LEDS">`
+        . # # . . 
+        # . . # . 
+        # . . # . 
+        # . . # . 
+        . # # . .
+        `</field></block></statement><next><block type="controls_if" id="Q.G7@GBxdCr-2ccGOtpp"><value name="IF0"><shadow type="logic_boolean" id="93vXQ3Q)S?g{fl3|SNZ)"><field name="BOOL">TRUE</field></shadow><block type="logic_negate" id="{TGXQ;zhD:Q_~U-OyJ^#"><value name="BOOL"><block type="kitronik_controller_ispressed" id="Q%/^O,Oua2F/ZT0|s1zZ"><field name="button">Kitronik_Game_Controller.ControllerButtonPins.Left</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="BfmoNjp@nT~`M(-A-G=-"><field name="LEDS">`
+        . # # . . 
+        # . . # . 
+        # . . # . 
+        # . . # . 
+        . # # . .
+        `</field></block></statement></block></next></block></statement></block></statement></block><block type="set_traffic_light_state" id="J7IDg%]|b59vH#i!,d1x" disabled="true" x="-37" y="1046"><field name="lightState">Kitronik_STOPbit.LightStates.GetReady</field></block></xml>
