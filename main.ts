@@ -1,31 +1,41 @@
+input.onButtonPressed(Button.A, function () {
+    knuffel += 5
+})
+input.onButtonPressed(Button.B, function () {
+    voeding += 5
+})
+let knuffel = 20
+let voeding = 20
+let dood = 0
 basic.forever(function () {
-    if (true) {
-    	
-    } else {
-    	
+    if (knuffel > 10 && voeding > 10) {
+        basic.showLeds(`
+            . . . . .
+            . # . # .
+            . . . . .
+            # . . . #
+            . # # # .
+            `)
+    }
+    if (!(knuffel > 10 || !(voeding > 10))) {
+        basic.showLeds(`
+            . . . . .
+            . # . # .
+            . . . . .
+            . # # # .
+            # . . . #
+            `)
+    }
+    if (dood < 1) {
+        basic.showLeds(`
+            . . . . .
+            # # . # #
+            . . . . .
+            . . . . .
+            # # # # #
+            `)
     }
 })
 basic.forever(function () {
 	
-})
-basic.forever(function () {
-    if (Kitronik_Game_Controller.buttonIsPressed(Kitronik_Game_Controller.ControllerButtonPins.Left) && Kitronik_Game_Controller.buttonIsPressed(Kitronik_Game_Controller.ControllerButtonPins.Right) || Kitronik_Game_Controller.buttonIsPressed(Kitronik_Game_Controller.ControllerButtonPins.Up) && Kitronik_Game_Controller.buttonIsPressed(Kitronik_Game_Controller.ControllerButtonPins.Down)) {
-        basic.showLeds(`
-            . . # . .
-            . # # . .
-            . . # . .
-            . . # . .
-            . # # # .
-            `)
-    } else {
-        if (!(Kitronik_Game_Controller.buttonIsPressed(Kitronik_Game_Controller.ControllerButtonPins.Right)) || !(Kitronik_Game_Controller.buttonIsPressed(Kitronik_Game_Controller.ControllerButtonPins.Left)) || (!(Kitronik_Game_Controller.buttonIsPressed(Kitronik_Game_Controller.ControllerButtonPins.Up)) || !(Kitronik_Game_Controller.buttonIsPressed(Kitronik_Game_Controller.ControllerButtonPins.Right)))) {
-            basic.showLeds(`
-                . # # . .
-                # . . # .
-                # . . # .
-                # . . # .
-                . # # . .
-                `)
-        }
-    }
 })
